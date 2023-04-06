@@ -14,9 +14,9 @@ const SelectPlan: React.FC = () => {
         <MainStyle>
             <TitleStep title="Selecione seu plano" subtitle="Temos a opção da cobrança mensal ou anual." />
             <MainSelectPlan>
-                <PlanOption imagePlan={arcadeIcon} titlePlan="Arcade" pricePlan="R$30/ mês" />
-                <PlanOption imagePlan={advancedIcon} titlePlan="Advanced" pricePlan="R$60/ mês" />
-                <PlanOption imagePlan={proIcon} titlePlan="Pro" pricePlan="R$100/ mês" />
+                <PlanOption imagePlan={arcadeIcon} titlePlan="Arcade" pricePlan="R$30/mês" />
+                <PlanOption imagePlan={advancedIcon} titlePlan="Advanced" pricePlan="R$60/mês" />
+                <PlanOption imagePlan={proIcon} titlePlan="Pro" pricePlan="R$100/mês" />
             </MainSelectPlan>
             <PlanTime />
             <ButtonPrev>Anterior</ButtonPrev>
