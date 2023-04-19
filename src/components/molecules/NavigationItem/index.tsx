@@ -1,10 +1,16 @@
-import { DivNavigationItem, NumberNavigationItem, StepStyle, TitleStepStyle } from "./styles"
+import store from "../../../store"
+import { setStepAction } from "../../../store/actions"
+import { DivNavigationItem, NumberNavigationItem, StepStyle, TextNumberNavigationItem, TitleStepStyle } from "./styles"
 
-const NavigationItem: React.FC<{number: string, step: string, titleStep: string}> = (props) => {
+const NavigationItem: React.FC<{number: string, step: string, titleStep: string, isSelected: boolean}> = (props) => {
+    const handleClick = (number: string) => {
+        store.dispatch(setStepAction(number))
+    }
+    
     return (
-        <DivNavigationItem>
-            <NumberNavigationItem>
-                <span>{props.number}</span>
+        <DivNavigationItem onClick={() => handleClick(props.number)}>
+            <NumberNavigationItem isSelected={props.isSelected}>
+                <TextNumberNavigationItem isSelected={props.isSelected}>{props.number}</TextNumberNavigationItem>
             </NumberNavigationItem>
             <div>
                 <StepStyle>{props.step}</StepStyle>

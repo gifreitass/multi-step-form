@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivOptions = styled.div`
     display: flex;
-    width: 25rem;
+    width: 30vw;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
