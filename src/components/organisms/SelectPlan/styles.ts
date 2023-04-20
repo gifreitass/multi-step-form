@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const MainSelectPlan = styled.main`
+export const MainStyle = styled.main`
+    height: 80vh;
+    width: 30vw;
+`
+
+export const DivSelectPlan = styled.div`
     display: flex;
     gap: 20px;
     margin-top: 40px;

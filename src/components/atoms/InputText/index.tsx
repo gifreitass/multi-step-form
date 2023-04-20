@@ -1,10 +1,14 @@
-import { DivInput, InputStyle, LabelInput } from "./styles"
+import { DivInput, DivLabelError, InputStyle, LabelInput, TextError } from "./styles"
 
-const InputText: React.FC<{for: string, id: string, placeholder: string, label: string}> = (props) => {
+const InputText: React.FC<{for: string, id: string, placeholder: string, label: string, value: string, onChange: any, error: string | undefined, isNotUndefined: boolean}> = (props) => {
+    console.log(props.isNotUndefined)
     return (
         <DivInput>
-            <LabelInput htmlFor={props.for}>{props.label}</LabelInput> <br />
-            <InputStyle type="text" id={props.id} placeholder={props.placeholder}/> <br />
+            <DivLabelError>
+            <LabelInput htmlFor={props.for}>{props.label}</LabelInput> 
+            <TextError>{props.error}</TextError>
+            </DivLabelError>
+            <InputStyle isNotUndefined={props.isNotUndefined} type="text" id={props.id} placeholder={props.placeholder} value={props.value} onChange={props.onChange}/> <br />
         </DivInput>
     )
 }
