@@ -1,8 +1,10 @@
 import { combineReducers, createStore } from "redux";
-import stepReducer from "./reducers";
+import { planReducer } from "./plans/reducer";
+import { stepReducer } from "./step/reducer";
 
 const reducers = combineReducers({
-    step: stepReducer
+    step: stepReducer,
+    plan: planReducer
 })
 
 const store = createStore(

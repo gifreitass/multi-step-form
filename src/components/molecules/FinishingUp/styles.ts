@@ -33,7 +33,7 @@ export const DivChosenPlan = styled.div`
 export const SeparateDiv = styled.div`
     background-color: hsl(229, 24%, 87%);
     height: 1px;
-    width: 32rem;
+    width: 26.5rem;
     margin: 25px 0;
 `
 

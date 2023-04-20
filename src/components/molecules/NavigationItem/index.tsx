@@ -1,5 +1,5 @@
 import store from "../../../store"
-import { setStepAction } from "../../../store/actions"
+import { setStepAction } from "../../../store/step/action"
 import { DivNavigationItem, NumberNavigationItem, StepStyle, TextNumberNavigationItem, TitleStepStyle } from "./styles"
 
 const NavigationItem: React.FC<{number: string, step: string, titleStep: string, isSelected: boolean}> = (props) => {

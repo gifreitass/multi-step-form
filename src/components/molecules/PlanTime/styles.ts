@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface PlanTimeItemProps {
+    isSelected?: boolean
+}
+
 export const DivPlanTime = styled.div`
     display: flex;
     width: 33vw;
@@ -13,6 +17,6 @@ export const DivPlanTime = styled.div`
 `
 
 export const TextTime = styled.span`
-    color: grey;
-    font-weight: 500;
+    color: ${(props: PlanTimeItemProps) => (props.isSelected ? 'hsl(213, 96%, 18%)' : 'grey')};
+    font-weight: ${(props: PlanTimeItemProps) => (props.isSelected ? 600 : 500)};
 `
