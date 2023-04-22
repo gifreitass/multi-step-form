@@ -1,8 +1,10 @@
 import { ButtonStyle } from "./styles"
 
-const ButtonNext: React.FC<{children: string}> = (props) => {
+type ButtonTypes = "button" | "submit" | "reset"
+
+const ButtonNext: React.FC<{children: string, type?: ButtonTypes}> = (props) => {
     return (
-        <ButtonStyle type="submit">{props.children}</ButtonStyle>
+        <ButtonStyle type={props.type}>{props.children}</ButtonStyle>
     )
 }
 

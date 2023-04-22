@@ -1,10 +1,12 @@
 import { combineReducers, createStore } from "redux";
+import { formValuesReducer } from "./formValues/reducer";
 import { planReducer } from "./plans/reducer";
 import { stepReducer } from "./step/reducer";
 
 const reducers = combineReducers({
     step: stepReducer,
-    plan: planReducer
+    plan: planReducer,
+    formValues: formValuesReducer
 })
 
 const store = createStore(

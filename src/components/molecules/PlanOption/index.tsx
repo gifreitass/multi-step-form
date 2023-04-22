@@ -1,9 +1,12 @@
 import store from "../../../store"
 import { setPlanOptionAction } from "../../../store/plans/action"
-import { Plans } from "../../../types/store.interface"
+import { iState, Plans } from "../../../types/store.interface"
 import { DivPlanOption, DivTextPlanOption, PricePlanOption, PromotionalPrice, TitlePlanOption } from "./styles"
+import { useSelector } from 'react-redux'
 
-const PlanOption: React.FC<{imagePlan: string, titlePlan: Plans, pricePlan: number, isSelected: boolean, recurrence: string}> = (props) => {
+const PlanOption: React.FC<{imagePlan: string, titlePlan: Plans, pricePlan: number, isSelected: boolean}> = (props) => {
+    const planTime = useSelector((state: iState) => state.plan.planTime)
+
     const handleClick = (plan: Plans) => {
         store.dispatch(setPlanOptionAction(plan))
     }
@@ -13,8 +16,8 @@ const PlanOption: React.FC<{imagePlan: string, titlePlan: Plans, pricePlan: numb
             <img src={props.imagePlan} alt="imagem referente ao plano" />
             <DivTextPlanOption>
                 <TitlePlanOption>{props.titlePlan}</TitlePlanOption>
-                <PricePlanOption>R${props.pricePlan}/mês</PricePlanOption>
-                {props.recurrence === 'annual' ? <PromotionalPrice>2 meses grátis</PromotionalPrice> : ''}
+                {planTime === 'Anual' ? <PricePlanOption>R${props.pricePlan}/ano</PricePlanOption> : <PricePlanOption>R${props.pricePlan}/mês</PricePlanOption>}
+                {planTime === 'Anual' ? <PromotionalPrice>2 meses grátis</PromotionalPrice> : ''}
             </DivTextPlanOption>
         </DivPlanOption>
     )

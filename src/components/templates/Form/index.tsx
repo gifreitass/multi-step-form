@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { iState } from '../../../types/store.interface'
-import AddOns from '../../organisms/AddOns'
+import AddOns from '../../organisms/Addons'
 import FinishSubscription from '../../organisms/FinishSubscription'
 import Informations from '../../organisms/Informations'
 import SelectPlan from '../../organisms/SelectPlan'

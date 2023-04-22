@@ -1,6 +1,6 @@
 import { DivInput, DivLabelError, InputStyle, LabelInput, TextError } from "./styles"
 
-const InputText: React.FC<{for: string, id: string, placeholder: string, label: string, value: string, onChange: any, error: string | undefined, isNotUndefined: boolean}> = (props) => {
+const InputText: React.FC<{for: string, id: string, placeholder: string, label: string, value: string, onChange: (evt: React.ChangeEvent<HTMLInputElement>) => void, error: string | undefined, isNotUndefined: boolean}> = (props) => {
     return (
         <DivInput>
             <DivLabelError>

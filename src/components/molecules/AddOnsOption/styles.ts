@@ -1,14 +1,20 @@
 import styled from "styled-components";
 
+interface AddonsProps {
+    isSelected?: boolean
+}
+
 export const DivOptions = styled.div`
     display: flex;
     width: 30vw;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border: 2px solid hsl(229, 24%, 87%);
+    border: ${(props: AddonsProps) => props.isSelected ? '2px solid hsl(243, 100%, 62%)' : '2px solid hsl(229, 24%, 87%)'};
+    background-color: ${(props: AddonsProps) => (props.isSelected ? '#f8f9fe' : 'none')};
     border-radius: 7px;
     height: 5rem;
+    cursor: pointer;
 `
 
 export const DivSelectOption = styled.div`
