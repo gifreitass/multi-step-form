@@ -8,6 +8,9 @@ export const MainStyle = styled.main`
     align-items: center;
     width: 30vw;
     gap: 25px;
+    @media (max-width: 1030px) {
+        width: 45vw;
+    }
 `
 
 export const Image = styled.img`

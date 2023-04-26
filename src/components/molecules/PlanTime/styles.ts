@@ -6,7 +6,7 @@ interface PlanTimeItemProps {
 
 export const DivPlanTime = styled.div`
     display: flex;
-    width: 33vw;
+    width: 30vw;
     justify-content: center;
     gap: 30px;
     margin: 40px auto 20px auto;
@@ -14,6 +14,12 @@ export const DivPlanTime = styled.div`
     align-items: center;
     border-radius: 5px;
     height: 7vh;
+    @media (max-width: 1200px) {
+        width: 33vw;
+    }
+    @media (max-width: 1000px) {
+        width: 37vw;
+    }
 `
 
 export const TextTime = styled.span`

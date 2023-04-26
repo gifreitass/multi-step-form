@@ -10,5 +10,8 @@ export const DivOptions = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
+    @media (max-width: 1200px) {
+        margin-top: 35px;
+    }
 `

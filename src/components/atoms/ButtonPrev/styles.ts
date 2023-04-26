@@ -8,4 +8,7 @@ export const SpanStyle = styled.span`
     padding: 13px;
     font-weight: 600;
     font-size: 15px;
+    @media (max-width: 1200px) {
+        margin-top: 40px;
+    }
 `

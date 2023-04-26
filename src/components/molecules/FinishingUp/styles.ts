@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
 
+interface FinishingUpItemProps {
+    hasSelectedAddons?: boolean
+}
+
 const spacedElements = css`
     display: flex;
     justify-content: space-between;
@@ -18,6 +22,7 @@ export const SubTotalDiv = styled.div`
     padding: 25px 20px;
     border-radius: 7px;
     margin-top: 40px;
+    margin-top: ${(props: FinishingUpItemProps) => (props.hasSelectedAddons ? 'none' : '40px')};
 `
 
 export const DivPlan = styled.div`
@@ -33,7 +38,6 @@ export const DivChosenPlan = styled.div`
 export const SeparateDiv = styled.div`
     background-color: hsl(229, 24%, 87%);
     height: 1px;
-    width: 26.5rem;
     margin: 25px 0;
 `
 
@@ -60,7 +64,8 @@ export const DivPrice = styled.div`
 export const DivTotal = styled.div`
     ${spacedElements}
     padding: 0 35px;
-    margin-top: 40px;
+    margin-top: ${(props: FinishingUpItemProps) => (props.hasSelectedAddons ? '40px' : '60px')};
+    margin-bottom: ${(props: FinishingUpItemProps) => (props.hasSelectedAddons ? 'none' : '40px')};
 `
 
 export const TitlePlan = styled.span`

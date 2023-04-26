@@ -11,4 +11,7 @@ export const ButtonStyle = styled.button`
     float: right;
     cursor: pointer;
     font-weight: 600;
+    @media (max-width: 1200px) {
+        margin-top: 40px;
+    }
 `

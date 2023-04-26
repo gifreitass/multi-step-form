@@ -58,7 +58,7 @@ const FinishingUp = () => {
 
     return (
         <>
-            <SubTotalDiv>
+            <SubTotalDiv hasSelectedAddons={selectedAddons.length > 0}>
                 <DivPlan>
                     <DivChosenPlan>
                         <TitlePlan>{planInfo} ({planTime})</TitlePlan>
@@ -87,7 +87,7 @@ const FinishingUp = () => {
                     </>
                 }
             </SubTotalDiv>
-            <DivTotal>
+            <DivTotal hasSelectedAddons={selectedAddons.length > 0}>
                 {planTime === 'Mensal' ? <>
                     <TitleTotal>Total (por mês)</TitleTotal
                     ><TotalPrice>R${PLANS[plan][`${recurrence}_value`] + totalPriceAddons}/mês</TotalPrice>

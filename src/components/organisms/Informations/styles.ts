@@ -1,8 +1,22 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const button = css`
+    padding: 13px;
+    width: 6.5rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-top: 50px;
+    float: right;
+    font-weight: 600;
+`
 
 export const MainStyleForm = styled.form`
     height: 80vh;
     width: 30vw;
+    @media (max-width: 1120px) {
+        width: none;
+    }
 `
 
 export const DivFormik = styled.div`
@@ -13,27 +27,18 @@ export const DivFormik = styled.div`
 `
 
 export const ButtonNext = styled.button`
-    padding: 13px;
-    width: 6.5rem;
-    border-radius: 5px;
+    ${button};
     background-color: hsl(213, 96%, 18%);
-    color: white;
-    border: none;
-    margin-top: 50px;
-    float: right;
     cursor: pointer;
-    font-weight: 600;
+    @media (max-width: 1120px) {
+        margin-top: 40px;
+    }
 `
 
 export const ButtonNextError = styled.button`
-    padding: 13px;
-    width: 6.5rem;
-    border-radius: 5px;
+    ${button};
     background-color: grey;
-    color: white;
-    border: none;
-    margin-top: 50px;
-    float: right;
-    cursor: pointer;
-    font-weight: 600;
+    @media (max-width: 1120px) {
+        margin-top: 40px;
+    }
 `

@@ -8,5 +8,8 @@ export const DivForm = styled.div`
     justify-content: center;
     gap: 150px;
     margin-top: 30px;
+    @media (max-width: 1120px) {
+        gap: 100px;
+    }
 `
 
