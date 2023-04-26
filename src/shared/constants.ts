@@ -15,14 +15,17 @@ export const PLANS = {
 
 export const ADDONS = {
     onlineService: {
+        title: 'Serviço Online',
         monthly_value: 5,
         annual_value: 15
     },
     largerStorage: {
+        title: 'Maior Armazenamento',
         monthly_value: 10,
         annual_value: 30
     },
     customProfile: {
+        title: 'Perfil Customizável',
         monthly_value: 10,
         annual_value: 30
     }

@@ -9,8 +9,8 @@ const Summary = () => {
         <MainStyle>
             <TitleStep title="Finalizar pedido" subtitle="Confira se todas as informações estão corretas antes de finalizar a compra." />
             <FinishingUp />
-            <ButtonPrev>Anterior</ButtonPrev>
-            <ButtonNext>Confirmar</ButtonNext>
+            <ButtonPrev prevPage="3">Anterior</ButtonPrev>
+            <ButtonNext nextPage="5">Confirmar</ButtonNext>
         </MainStyle>
     )
 }

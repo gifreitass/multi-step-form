@@ -19,7 +19,7 @@ const AddOnsOption:React.FC<{title: string, subtitle: string, price: number, id:
     return (
         <DivOptions isSelected={isAddonsSelected} onClick={handleClick}>
             <DivSelectOption>
-                <CheckBox type="checkbox" checked={isAddonsSelected}/>
+                <CheckBox type="checkbox" checked={isAddonsSelected} onChange={handleClick}/>
                 <div>
                     <Title>{props.title}</Title>
                     <SubTitle>{props.subtitle}</SubTitle>

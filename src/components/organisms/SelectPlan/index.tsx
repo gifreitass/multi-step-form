@@ -26,8 +26,8 @@ const SelectPlan: React.FC = () => {
                 <PlanOption isSelected={plan === "Pro"} imagePlan={proIcon} titlePlan="Pro" pricePlan={PLANS.pro[`${recurrence}_value`]} />
             </DivSelectPlan>
             <PlanTime />
-            <ButtonPrev>Anterior</ButtonPrev>
-            <ButtonNext>Próximo</ButtonNext>
+            <ButtonPrev prevPage="1">Anterior</ButtonPrev>
+            <ButtonNext nextPage="3">Próximo</ButtonNext>
         </MainStyle>
     )
 }

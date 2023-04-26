@@ -9,7 +9,7 @@ export const DivPlanTime = styled.div`
     width: 33vw;
     justify-content: center;
     gap: 30px;
-    margin: 40px auto;
+    margin: 40px auto 20px auto;
     background-color: #f8f9fe;
     align-items: center;
     border-radius: 5px;

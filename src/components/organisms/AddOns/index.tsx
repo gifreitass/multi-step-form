@@ -20,8 +20,8 @@ const Addons = () => {
                 <AddOnsOption id="largerStorage" title="Maior Armazenamento" subtitle="1TB extra de armazenamento na nuvem" price={ADDONS.largerStorage[`${recurrence}_value`]}/>
                 <AddOnsOption id="customProfile" title="Perfil customizável" subtitle="Personalize seu perfil como desejar" price={ADDONS.customProfile[`${recurrence}_value`]} />
             </DivOptions>
-            <ButtonPrev>Anterior</ButtonPrev>
-            <ButtonNext>Próximo</ButtonNext>
+            <ButtonPrev prevPage="2">Anterior</ButtonPrev>
+            <ButtonNext nextPage="4">Próximo</ButtonNext>
         </MainStyle>
     )
 }

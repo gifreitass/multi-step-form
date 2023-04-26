@@ -19,7 +19,6 @@ export const formValuesReducer = (state = FORM_VALUES_INITIAL_STATE, action: iAc
                 ...action.payload
             }
         case "SET_ADDONS": 
-            console.log(action.payload)
             return {
                 ...state,
                 addons: action.payload

@@ -61,7 +61,6 @@ export const DivTotal = styled.div`
     ${spacedElements}
     padding: 0 35px;
     margin-top: 40px;
-    margin-bottom: 20px;
 `
 
 export const TitlePlan = styled.span`
