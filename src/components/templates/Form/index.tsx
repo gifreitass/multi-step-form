@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { iState } from '../../../types/store.interface'
-import AddOns from '../../organisms/Addons'
+import Addons from '../../organisms/Addons'
 import FinishSubscription from '../../organisms/FinishSubscription'
 import Informations from '../../organisms/Informations'
 import SelectPlan from '../../organisms/SelectPlan'
@@ -16,7 +16,7 @@ const Form: React.FC = () => {
             <SideBar />
             {step === '1' && <Informations />}
             {step === '2' && <SelectPlan />}
-            {step === '3' && <AddOns />}
+            {step === '3' && <Addons />}
             {step === '4' && <Summary />}
             {step === '5' && <FinishSubscription />}
         </DivForm>
