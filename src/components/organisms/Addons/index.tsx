@@ -1,7 +1,7 @@
 import { iState } from "../../../types/store.interface"
 import ButtonNext from "../../atoms/ButtonNext"
 import ButtonPrev from "../../atoms/ButtonPrev"
-import AddOnsOption from "../../molecules/AddonsOption"
+import AddOnsOption from "../../molecules/AddOnsOption"
 import TitleStep from "../../molecules/TitleStep"
 import { useSelector } from 'react-redux'
 import { ADDONS } from "../../../shared/constants"
